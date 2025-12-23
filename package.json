@@ -1,0 +1,19 @@
+{
+  "name": "youtube-downloader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "debug": "^4.4.3",
+    "inquirer": "^8.2.7",
+    "youtube-dl-exec": "^3.0.27",
+    "yt-dlp-exec": "^1.0.2"
+  }
+}
