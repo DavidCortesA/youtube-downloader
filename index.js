@@ -62,9 +62,10 @@ async function iniciarApp() {
         progressBar.start(100, 0);
 
         await ytDlp(respuestas.url, {
-            format: esAudio ? 'bestaudio' : 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]',
+            format: esAudio ? 'bestaudio/best' : 'bestvideo[ext=mp4]+bestaudio/best',
             output: cambiarIntro ? tempFile : finalOutput,
             mergeOutputFormat: 'mp4',
+            noWarnings: true, // Ignorar advertencias de configuración
             newline: true,
         }, {
             onData: (data) => {
